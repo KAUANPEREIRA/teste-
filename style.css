@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -34,6 +41,17 @@ body {
   justify-content: center;
   color: white;
 }
+.dropdown-menu {
+  position: absolute;
+  display: none;
+}
+.dropdown-menu a {
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 .menu {
   display: flex;
   align-items: end;
@@ -45,7 +63,6 @@ nav li {
   margin: 0px;
   padding: 0px;
 }
-
 nav ul {
   display: flex;
 }
@@ -65,10 +82,12 @@ nav ul li a:hover {
 }
 
 section {
+  margin-top: 100px;
   height: 420px;
   display: flex;
   justify-content: center;
   background: #d3d3d3;
+  margin-bottom: 100px;
 }
 
 .carrousel {
@@ -155,6 +174,7 @@ footer {
 
 .menuFooter {
   margin: auto;
+  margin-top: 70px;
 }
 
 .menuFooter ul {
@@ -175,17 +195,6 @@ span {
 
 .column {
   flex-direction: column;
-}
-
-.menuMobile {
-  display: none;
-  width: 40px;
-  height: 40px;
-
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-right: 40px;
-  border-radius: 20px;
 }
 
 .container-cards {
@@ -242,12 +251,19 @@ img {
     width: 100%;
   }
 
-  .mm {
-    height: 3px;
-    background-color: #1e90ff;
-  }
-
   .container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagem-teste {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .swiper {
+    height: 270px;
   }
 }

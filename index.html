@@ -12,23 +12,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <span>SLIDER</span>
+    <header>
+      <div class="sub-header"></div>
+      <div class="container container-header">
+        <div class="logo">IMAGEM</div>
+
+        <nav class="menu">
+          <ul class="lista" id="lista">
+            <li class="dropdown">
+              <a href="index.html">HOME</a>
+              <div class="dropdown-menu">
+                <a href="">SubMenu</a>
+                <a href="">SubMenu</a>
+              </div>
+            </li>
+            <li><a href="index.html">EMPRESAS</a></li>
+            <li><a href="index.html">CLIENTES</a></li>
+            <li><a href="index.html">CONTATO</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section>
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="project-img">
-              <img src="./img/foto_01.png" alt="Foto 01" />
+              <h1>Slide 1</h1>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="project-img">
-              <img src="./img/foto_02.png" alt="Foto 02" />
+              <h1>Slide 2</h1>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="project-img">
-              <img src="./img/foto_03.png" alt="Foto 03" />
+              <h1>Slide 3</h1>
             </div>
           </div>
         </div>
@@ -37,7 +57,72 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
-    </main>
+    </section>
+
+    <article>
+      <div class="container article-section">
+        <div class="teste-html">
+          <h1>teste de HTML E CSS</h1>
+          <span>Quesitos de avaliação</span>
+          <ul>
+            <li>Organanização do código(quanto mais limpo melhor )</li>
+            <li>Nivel de detalhismo (quanto mais identico melhor )</li>
+            <li>
+              Tempo de desenvolvimento (Seja sincero ao enviar o tempo gasto )
+            </li>
+          </ul>
+          <p>
+            Ao finalizar o teste , envie zipado o código para o email com o
+            tempo gasto e seu cv anexado
+          </p>
+
+          <span>Obrigado e boa sorte!</span>
+        </div>
+        <div class="imagem-teste">
+          <div class="conteúdo-imagem">IMAGEM</div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="container" style="display: flex; flex-direction: column">
+        <h1 style="margin-top: 30px; margin-bottom: 30px">Boxes de destaque</h1>
+
+        <div class="container-cards">
+          <div>
+            <div class="card">IMAGEM</div>
+            <a href="">Um texto descritivo com link apenas</a>
+          </div>
+
+          <div>
+            <div class="card">IMAGEM</div>
+            <a href="">Um texto descritivo com link apenas</a>
+          </div>
+
+          <div>
+            <div class="card">IMAGEM</div>
+            <a href="">Um texto descritivo com link apenas</a>
+          </div>
+
+          <div>
+            <div class="card">IMAGEM</div>
+            <a href="">Um texto descritivo com link apenas</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <div class="container column">
+        <div class="menuFooter">
+          <ul>
+            <li>HOME</li>
+            <li>EMPRESA</li>
+            <li>CLIENTES</li>
+            <li>CONTATO</li>
+          </ul>
+        </div>
+        <span style="margin: auto; margin-top: 50px">RODAPE</span>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
